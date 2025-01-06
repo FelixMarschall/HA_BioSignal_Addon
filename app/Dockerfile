@@ -13,7 +13,6 @@ RUN \
 
 WORKDIR /app_data
 
-COPY run.sh /app_data/
 COPY SmartHomeBioSignal/dash-app/ /app_data/
 
 RUN apk add tree
