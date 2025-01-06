@@ -25,7 +25,7 @@ WORKDIR /app_data
 
 # Copy App filesystem
 COPY run.sh /app_data/
-COPY app/SmartHomeBioSignal /app_data/
+COPY SmartHomeBioSignal /app_data/
 
 RUN pip install -r requirements.txt
 
