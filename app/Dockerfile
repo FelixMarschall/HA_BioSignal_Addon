@@ -25,7 +25,7 @@ WORKDIR /app_data/SmartHomeBioSignal/dash-app
 
 RUN tree
 
-RUN poetry install --no-dev
+RUN poetry install
 
 RUN chmod a+x ./run.sh
 CMD [ "./run.sh" ]
