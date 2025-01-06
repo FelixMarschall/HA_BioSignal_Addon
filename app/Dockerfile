@@ -14,12 +14,18 @@ RUN \
 WORKDIR /app_data
 
 COPY run.sh /app_data/
-COPY SmartHomeBioSignal /app_data/
+COPY SmartHomeBioSignal/dash-app/ /app_data/
 
 RUN apk add tree
 RUN tree
 
-RUN pip install -r dash-app/requirements.txt
+RUN pip install poetry
+
+WORKDIR /app_data/SmartHomeBioSignal/dash-app
+
+RUN tree
+
+RUN poetry install --no-dev
 
 RUN chmod a+x ./run.sh
 CMD [ "./run.sh" ]
