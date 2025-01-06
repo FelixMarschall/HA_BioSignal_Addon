@@ -22,7 +22,7 @@ RUN pip install poetry
 RUN tree
 
 
-WORKDIR /SmartHomeBioSignal/dash-app
+WORKDIR /dash-app
 
 RUN tree
 
