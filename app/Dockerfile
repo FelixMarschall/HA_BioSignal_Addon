@@ -27,10 +27,6 @@ WORKDIR /app_data
 COPY run.sh /app_data/
 COPY SmartHomeBioSignal /app_data/
 
-RUN apk add tree
-
-RUN tree
-
 RUN pip install -r ./dash-app/requirements.txt
 
 # Start app

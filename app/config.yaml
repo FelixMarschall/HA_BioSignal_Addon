@@ -5,10 +5,10 @@ slug: biothermalharmony
 description: Smart Watch integration with temperature classifiaction
 url: "https://github.com/FelixMarschall/HA_BioSignal_Addon/"
 arch:
+  - amd64
   # - armhf
   # - armv7
   # - aarch64
-  - amd64
   # - i386
 init: false
 map:
