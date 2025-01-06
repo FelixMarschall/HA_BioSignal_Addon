@@ -11,16 +11,6 @@ RUN \
   curl -sSLf -o /usr/bin/tempio \
   "https://github.com/home-assistant/tempio/releases/download/${TEMPIO_VERSION}/tempio_${BUILD_ARCH}"
 
-
-# RUN apt update && apt install -y \
-#   python3 \
-#   python3-pip \
-#   graphviz \
-#   libblas-dev \
-#   liblapack-dev \
-#   libumfpack5 \
-#   && rm -rf /var/lib/apt/lists/*
-
 WORKDIR /app_data
 
 # Copy App filesystem
