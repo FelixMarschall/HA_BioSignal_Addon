@@ -19,10 +19,6 @@ RUN apk add tree
 RUN tree
 
 RUN pip install poetry
-RUN tree
-
-
-WORKDIR /dash-app
 
 RUN tree
 
