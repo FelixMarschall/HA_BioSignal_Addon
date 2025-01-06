@@ -1,1 +1,0 @@
-python3 dash-app/src/app.py

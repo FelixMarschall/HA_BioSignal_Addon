@@ -20,12 +20,13 @@ RUN apk add tree
 RUN tree
 
 RUN pip install poetry
+RUN tree
 
-WORKDIR /app_data/SmartHomeBioSignal/dash-app
+
+WORKDIR /SmartHomeBioSignal/dash-app
 
 RUN tree
 
 RUN poetry install
 
-RUN chmod a+x ./run.sh
-CMD [ "./run.sh" ]
+CMD [ "poetry", "run", "python", "dash_app/src/app.py" ]
