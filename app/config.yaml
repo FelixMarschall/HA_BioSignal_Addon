@@ -1,0 +1,32 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: BioThermal Harmony
+version: "1.2.0"
+slug: biothermalharmony
+description: Smart Watch integration with temperature classifiaction
+url: "https://github.com/FelixMarschall/HA_BioSignal_Addon/"
+arch:
+  # - armhf
+  # - armv7
+  # - aarch64
+  - amd64
+  # - i386
+init: false
+map:
+  - share:rw
+  - config:rw
+image: "ghcr.io/felixmarschall/{arch}-addon-biothermalharmony"
+
+hassio_api: true
+hassio_role: admin
+homeassistant_api: true
+host_network: true
+ports:
+  8050/tcp: 8050
+ports_description:
+  8050/tcp: Web interface
+webui: "[PROTO:option_name]://[HOST]:[PORT:8050]"
+
+options:
+  credential_secret: ""
+schema:
+  credential_secret: password

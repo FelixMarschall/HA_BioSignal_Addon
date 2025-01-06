@@ -1,0 +1,3 @@
+[submodule "app/SmartHomeBioSignal"]
+	path = app/SmartHomeBioSignal
+	url = https://github.com/FelixMarschall/SmartHomeBioSignal
