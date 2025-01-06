@@ -14,7 +14,7 @@ init: false
 map:
   - share:rw
   - config:rw
-image: "ghcr.io/felixmarschall/{arch}-addon-biothermalharmony"
+# image: "ghcr.io/felixmarschall/{arch}-addon-biothermalharmony"
 
 hassio_api: true
 hassio_role: admin
