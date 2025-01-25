@@ -14,7 +14,7 @@ RUN \
 WORKDIR /app_data
 
 COPY SmartHomeBioSignal/dash-app/ /app_data/
-
+RUN apt install software-properties-common
 RUN add-apt-repository ppa:deadsnakes/ppa -y
 # RUN apk add tree py3-scikit-learn
 RUN apt-get update && apt-get install -y build-essential python3.13 tree python3-sklearn python3-pip
