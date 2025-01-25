@@ -15,7 +15,7 @@ WORKDIR /app_data
 
 COPY SmartHomeBioSignal/dash-app/ /app_data/
 
-RUN apk add tree python3-dev gcc libc-dev
+RUN apk add tree build-base
 
 RUN tree
 
