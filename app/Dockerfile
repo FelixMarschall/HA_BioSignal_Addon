@@ -15,7 +15,7 @@ WORKDIR /app_data
 
 COPY SmartHomeBioSignal/dash-app/ /app_data/
 
-RUN apk add tree build-base
+RUN apk add tree py3-scikit-learn
 
 RUN tree
 
