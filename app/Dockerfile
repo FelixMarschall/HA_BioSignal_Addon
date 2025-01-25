@@ -16,7 +16,7 @@ WORKDIR /app_data
 COPY SmartHomeBioSignal/dash-app/ /app_data/
 
 # RUN apk add tree py3-scikit-learn
-RUN apt-get update && apt-get install -y build-essential tree python3-sklearn 
+RUN apt-get update && apt-get install -y build-essential tree python3-sklearn python3-pip
 
 RUN tree
 
