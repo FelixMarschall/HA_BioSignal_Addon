@@ -1,6 +1,9 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
 build_from:
     amd64: "ghcr.io/home-assistant/amd64-base-ubuntu:20.04"
+    aarch64: "ghcr.io/home-assistant/aarch64-base-ubuntu:20.04"
+    armv7: "ghcr.io/home-assistant/armv7-base-ubuntu:20.04"
+    i386: "ghcr.io/home-assistant/i386-base-ubuntu:20.04"
 
 ## Does not work yet because of skit learning
   # amd64: "ghcr.io/home-assistant/amd64-base-python"
